@@ -105,6 +105,7 @@ function drawAlgo() {
 		vertex( coords[0], coords[1] );
 		parent = parent.parent;
 	}
+
 	endShape();
 
 	if ( message ) {
@@ -142,9 +143,9 @@ function switchGridBuilder() {
 function switchDrawErase() {
 	gridBuilderErase = ! gridBuilderErase;
 	if ( gridBuilderErase ) {
-		return alert( "Setting Click to erase obstacles now." )
+		return alert( "Setting changed, click to erase obstacles now." )
 	} else {
-		return alert( "Okay, Clicking will add obstacles again now." )
+		return alert( "Okay, clicking will add obstacles again now." )
 	}
 }
 
@@ -160,11 +161,11 @@ function exportObstacles() {
 
 	data = JSON.stringify( data );
 
-	fileName = prompt( 'What would you like to save this file as..?', 'labyrinth' );
+	fileName = prompt( 'What would you like to save this file as ?', 'Name' );
 
 
 	if ( fileName === null ) {
-		return alert( 'Okay, I\'ll not export obstacles data.' )
+		return alert( 'Okay, obstacles data will not be exported.' )
 	}
 
 	var a = document.createElement("a");
@@ -175,32 +176,32 @@ function exportObstacles() {
 }
 
 function importObstacles() {
-	var data = prompt( 'Please paste in the contents from export file (I only understand JSON).' );
+	var data = prompt( 'Please paste in the contents from export file (JSON format).' );
 
 	if ( data === null ) {
-		return alert( 'Okay, I\'ll not import anything.' )
+		return alert( 'Okay, nothing will be imported.' )
 	}
 
 	try {
 		data = JSON.parse( data );
 	} catch (e) {
-		return alert( "Woah! I don't understand this data. You sure this is copied and pasted from an exported file..?" )
+		return alert( "Woah, can't understand this data. Are you sure this is copied and pasted from an exported file ?" )
 	}
 
 	if ( ! data || ! data.length ) {
-		return alert( "Sumimasen, This data seems to represent something I can't understand." )
+		return alert( "This data seems to represent something which can't be understand." )
 	}
 
 	for ( var i = 0; i < data.length; i ++ ) {
 		if ( ! data[i] || ! data[i].length ) {
-			return alert( 'Sorry, I don\'t understand this data.' )
+			return alert( 'Sorry, can\'t understand this data.' )
 		}
 		for ( var j = 0; j < data[i].length; j ++ ) {
 			nodes[i][j].blocked = !! data[i][j];
 		}
 	}
 
-	alert( 'I understood the data, let\'s see if I can solve it :D' )
+	alert( 'Understood the data, let\'s see if it can be solved.' )
 }
 
 function clearObstacles() {
@@ -212,11 +213,11 @@ function clearObstacles() {
 	}
 
 	if ( ! numObstacles ) {
-		return alert( 'Hmm... Not sure I see any obstacles drawn. I cannot help you clear anything else at the moment.' );
+		return alert( 'Hmm, not sure can\'t see any obstacles drawn.' );
 	}
 
-	if ( ! confirm( 'Are you sure you want me to remove all obstacles?' ) ) {
-		return alert( 'Okay, Leaving everything as is.' );
+	if ( ! confirm( 'Are you sure you want me to remove all obstacles ?' ) ) {
+		return alert( 'Okay, leaving everything as is.' );
 	}
 	for ( var i = 0; i < nodesCount; i ++ ) {
 		for ( var j = 0; j < nodesCount; j ++ ) {
@@ -227,29 +228,29 @@ function clearObstacles() {
 }
 
 function randomObstacles() {
-	var percentage  = prompt( 'How many obstacles should be there per 100 nodes (percent probability of a blocked node)..?' );
+	var percentage  = prompt( 'How many obstacles should be there per 100 nodes (percentage probability of a blocked node) ?' );
 
 	if ( percentage === null ) {
-		return alert( "Okay, I'll keep obstacles as is." );
+		return alert( "Okay, will keep obstacles as is." );
 	}
 
 	percentage = parseFloat( percentage );
 
 	if ( isNaN( percentage )  ) {
 		percentage = 25;
-		alert( "Oops, I couldn't quite understand. Gonna use 25% for now." );
+		alert( "Oops, couldn't quite understand. Gonna use 25% for now." );
 	} else if ( percentage > 100 ) {
-		alert( "You sure you know how percentage and probability work? It can't be over 100. XD" );
+		alert( "Are you sure, you know how percentage and probability work ? It can't be over 100." );
 	} else if ( percentage > 90 ) {
-		alert( "Hmm, this is going to be unsolvable. Maybe you want to draw path instead of draw obstacles XD" );
+		alert( "Hmm, this is going to be unsolvable. Maybe you want to draw path instead of draw obstacles." );
 	} else if ( percentage > 70 ) {
 		alert( "This one is probably going to be unsolvable. Let's try if you want to though." );
 	} else if ( percentage > 45 ) {
-		alert( "Woah, this one seems a bit difficult. I'll give it my best ;)" );
+		alert( "Woah, this one seems a bit difficult. Let's try this" );
 	} else if ( percentage > 25 ) {
-		alert( "Woah, this one looks good. Let's try this :D" );
+		alert( "Woah, this one looks good. Let's try this" );
 	} else {
-		alert( 'Aah, that looks easy.' )
+		alert( 'Okay, that\'s looks easy.' )
 	}
 
 	for ( var i = 0; i < nodesCount; i ++ ) {
