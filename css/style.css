@@ -1,0 +1,61 @@
+body {
+	font: 16px Segoe UI;
+	flex-direction: column-reverse;
+	max-width: 1000px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.stretch {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	background-color: #508fe2;
+	border: none;
+	color: white;
+	padding: 14px 16px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.button:hover {
+	box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+	box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.2);
+}
+
+.flex .button {
+	flex: 1;
+}
+
+body:not(.grid-builder) .show-in-grid-builder {
+	display: none;
+}
+
+.grid-builder .hide-in-grid-builder {
+	display: none;
+}
+
+.intro {
+	order: 1;
+}
+
+.clear, .clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
