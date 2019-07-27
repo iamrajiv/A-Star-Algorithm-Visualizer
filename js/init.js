@@ -189,7 +189,7 @@ function importObstacles() {
 	}
 
 	if ( ! data || ! data.length ) {
-		return alert( "This data seems to represent something which can't be understand." )
+		return alert( "This data seems to represent something which can't understand." )
 	}
 
 	for ( var i = 0; i < data.length; i ++ ) {
