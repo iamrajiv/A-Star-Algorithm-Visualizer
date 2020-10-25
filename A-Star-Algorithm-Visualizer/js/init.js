@@ -5,10 +5,12 @@ var
 	gridBuilder = document.body.classList.contains('grid-builder'),
 	gridBuilderErase = false,
 	aStar,
-	start_bubble = '#d52737', end_bubble = '#d52737',
-	path_line = '#d52737', path_bubble = '#33adff', side_bubble = '#d52737',
-	box_color = '#f2f2f2',
-	stroke = '';
+	start_bubble = '#0366d6',
+	end_bubble = '#0366d6',
+	path_bubble = '#99d6ff',
+	side_bubble = '#0366d6',
+	path_line = '#0366d6',
+	box_color = '#f2f2f2';
 
 function setup() {
 	var canvas = createCanvas(canvasSize, canvasSize);
