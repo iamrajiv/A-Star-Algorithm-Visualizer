@@ -1,19 +1,19 @@
 <div align="center">
-  <img src="assets/logo.svg" height=400" width="400" />
-  <br />
-  <h1>A* Algorithm Visualizer</h1>
-  <p align="center">
-    A simple pathfinding visualizer tool to visualize A* algorithm
-  </p>
-  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network"
-    ><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
-  /></a>
-  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/stargazers"
-    ><img src="https://img.shields.io/github/stars/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
-  /></a>
-  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE"
-    ><img src="https://img.shields.io/github/license/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
-  /></a>
+<img src="assets/logo.svg" height=400" width="400" />
+<br />
+<h1>A* Algorithm Visualizer</h1>
+<p align="center">
+A simple pathfinding visualizer tool to visualize A* algorithm
+</p>
+<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network">
+<img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"/>
+</a>
+<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/stargazers">
+<img src="https://img.shields.io/github/stars/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"/>
+</a>
+<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"/>
+</a>
 </div>
 
 ## About Project
