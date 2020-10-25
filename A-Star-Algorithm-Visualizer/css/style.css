@@ -1,0 +1,61 @@
+:root {
+  --theme: #d52737;
+  --text: #ffffff;
+  --hover_theme: #a81f2d;
+}
+
+body {
+  font: 16px/1.6 sans-serif;
+  flex-direction: column-reverse;
+  max-width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: var(--theme);
+}
+
+.stretch {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: var(--theme);
+  border: none;
+  color: var(--text);
+  padding: 14px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--hover_theme);
+}
+
+.flex .button {
+  flex: 1;
+}
+
+body:not(.grid-builder) .show-in-grid-builder {
+  display: none;
+}
+
+.grid-builder .hide-in-grid-builder {
+  display: none;
+}
+
+.intro {
+  order: 1;
+}

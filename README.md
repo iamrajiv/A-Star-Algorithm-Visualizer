@@ -1,18 +1,45 @@
+<div align="center">
+  <img src="assets/logo.svg" height=400" width="400" />
+  <br />
+  <h1>A* Algorithm Visualizer</h1>
+  <p align="center">
+    A simple pathfinding visualizer tool to visualize A* algorithm
+  </p>
+  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network"
+    ><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+  /></a>
+  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/stargazers"
+    ><img src="https://img.shields.io/github/stars/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+  /></a>
+  <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE"
+    ><img src="https://img.shields.io/github/license/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+  /></a>
+</div>
 
-# A* Search Algorithm For Pathfinding
+## About Project
 
-A* (pronounced as "A star") is a computer algorithm that is widely used in pathfinding and graph traversal. The algorithm efficiently plots a walkable path between multiple nodes, or points, on the graph.
+A\* algorithm is a searching algorithm that searches for the shortest path between the initial and the final state. It is used in various applications, such as maps.
 
-A* uses a function **f(n)** that gives an estimate of the total cost of a path using that node. Therefore, A* is a heuristic function, which differs from an algorithm in that a heuristic is more of an estimate and is not necessarily provably correct.
+In maps, the A\* algorithm is used to calculate the shortest distance between the source (initial state) and the destination (final state)
 
-A* expands paths that are already less expensive by using this function:
+A\* algorithm has 3 parameters:
 
-**f(n)=g(n)+h(n)**
+- **g**: The cost of moving from the initial cell to the current cell. It is the sum of all the cells that have been visited since leaving the first cell.
+- **h**: Also known as the heuristic value, it is the estimated cost of moving from the current cell to the final cell. The actual cost cannot be calculated until the final cell is reached. Hence, **h** is the estimated cost. We must make sure that there is never an overestimation of the cost.
+- **f**: It is the sum of **g** and **h**.
 
-where,
+So, **f = g + h**
 
-* **f(n)** = total estimated cost of path through node **n**
+The way that the algorithm makes its decisions is by taking the f-value into account. The algorithm selects the smallest f-valued cell and moves to that cell. This process continues until the algorithm reaches its goal cell.
 
-* **g(n)** = cost so far to reach node **n**
+## Installation & Setup
 
-* **h(n)** = estimated cost from **n** to goal. This is the heuristic part of the cost function, so it is like a guess.
+<a href="A-Star-Algorithm-Visualizer/index.html">Run Project</a>
+
+## Example Usage
+
+<p align="center"><img src="assets/demo.gif" height="300px" width="300px" /></p>
+
+## License
+
+[MIT](https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE)

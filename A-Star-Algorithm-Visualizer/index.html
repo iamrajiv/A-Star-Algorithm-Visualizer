@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>A* Search Algorithm For Pathfinding</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body class="flex grid-builder">
+    <div class="intro stretch">
+      <h2 align="center">A* Search Algorithm For Pathfinding</h2>
+    </div>
+
+    <div class="show-in-grid-builder flex" style="width: 700px;">
+      <a href="#" class="button" onclick="switchGridBuilder()">Run Seeker</a>
+      <a href="#" class="button" onclick="switchDrawErase()">Draw/Erase</a>
+      <a href="#" class="button" onclick="clearObstacles()">Clear</a>
+      <a href="#" class="button" onclick="randomObstacles()">Random</a>
+    </div>
+
+    <div class="hide-in-grid-builder flex" style="width: 700px;">
+      <a href="#" class="button switch-mode" onclick="switchGridBuilder()">Draw obstacles</a>
+      <a href="#" class="button" onclick="exportObstacles()">Export obstacles</a>
+      <a href="#" class="button" onclick="importObstacles()">Import obstacles</a>
+    </div>
+
+    <script src="js/a_star.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/node.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  </body>
+</html>

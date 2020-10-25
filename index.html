@@ -1,68 +1,71 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>A* Search Algorithm For Pathfinding</title>
-	<link rel="stylesheet" href="css/nav.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144716304-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-144716304-1');
-</script>
-</head>
-
-<body class="flex grid-builder">
-
-<div class="intro stretch">
-	<h2 align="center" ><u>A* Search Algorithm For Pathfinding</u></h2>
-</div>
-
-<div class="navbar">
-  <a href="https://iamrajiv.github.io/">PORTFOLIO</a>
-  <a href="https://iamrajiv.github.io/about.html">ABOUT</a>
-  <a href="https://iamrajiv.github.io/posts.html">POSTS</a>
-  <a href="https://iamrajiv.github.io/blog.html">BLOG</a>
-  <a href="https://iamrajiv.github.io/projects.html">PROJECTS</a>
-  <a href="https://iamrajiv.github.io/resume/">RESUME</a>
-</div>
-
-<footer>
-	<p>
-		<a class="github-button" href="https://github.com/iamrajiv" data-size="large" aria-label="Follow @iamrajiv on GitHub">Follow @iamrajiv</a>
-		<a class="github-button" href="https://github.com/iamrajiv/A-Star-Search-Algorithm-For-Pathfinding" data-icon="octicon-star" data-size="large" aria-label="Star iamrajiv/github-buttons on GitHub">Star</a>
-		<a class="github-button" href="https://github.com/iamrajiv/A-Star-Search-Algorithm-For-Pathfinding/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork iamrajiv/github-buttons on GitHub">Fork</a>
-		<a class="github-button" href="https://github.com/iamrajiv/A-Star-Search-Algorithm-For-Pathfinding/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue iamrajiv/github-buttons on GitHub">Issues</a>
-	</p>
-	<center>
-		<p>
-			RAJIV RANJAN SINGH © 2019
-		</p>
-	</center>
-</footer>
-
-<div class="show-in-grid-builder flex" style="width:700px;">
-	<a href="#" class="button" onclick="switchGridBuilder()">Run Seeker</a>
-	<a href="#" class="button" onclick="switchDrawErase()">Draw/Erase</a>
-	<a href="#" class="button" onclick="clearObstacles()">Clear</a>
-	<a href="#" class="button" onclick="randomObstacles()">Random</a>
-</div>
-
-<div class="hide-in-grid-builder flex" style="width:700px;">
-	<a href="#" class="button switch-mode" onclick="switchGridBuilder()">Draw Obstacles</a>
-	<a href="#" class="button" onclick="exportObstacles()">Export Obstacles</a>
-	<a href="#" class="button" onclick="importObstacles()">Import Obstacles</a>
-</div>
-
-<script language="javascript" type="text/javascript" src="js/a_star.js"></script>
-<script language="javascript" type="text/javascript" src="js/init.js"></script>
-<script language="javascript" type="text/javascript" src="js/node.js"></script>
-<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-</body>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A* Algorithm Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,400italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-icons@3.8.0/index.min.js"></script>
+  </head>
+  <body>
+    <div id="display">
+      <h1>A* Algorithm Visualizer</h1>
+      <h2>A simple pathfinding visualizer tool to visualize A* algorithm</h2>
+      <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/archive/master.zip">Download</a>
+      <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer">View on GitHub</a>
+    </div>
+    <div id="content">
+      <h2>About Project</h2>
+      <p>
+        A* algorithm is a searching algorithm that searches for the shortest path between the initial and the final state. It is used in various applications, such as maps.
+        <br /><br />
+        In maps, the A* algorithm is used to calculate the shortest distance between the source (initial state) and the destination (final state).
+        <br /><br />
+        A* algorithm has 3 parameters:
+        <br />
+        <li><b>g</b>: The cost of moving from the initial cell to the current cell. It is the sum of all the cells that have been visited since leaving the first cell.</li>
+        <li>
+          <b>h</b>: Also known as the heuristic value, it is the estimated cost of moving from the current cell to the final cell. The actual cost cannot be calculated until the
+          final cell is reached. Hence, <b>h</b> is the estimated cost. We must make sure that there is never an overestimation of the cost.
+        </li>
+        <li><b>f</b>: It is the sum of <b>g</b> and <b>h</b>.</li>
+        <br />
+        <center>So, <b>f = g + h</b></center>
+        <br />
+        The way that the algorithm makes its decisions is by taking the f-value into account. The algorithm selects the smallest f-valued cell and moves to that cell. This process
+        continues until the algorithm reaches its goal cell.
+      </p>
+      <h2>Installation & Setup</h2>
+      <p>
+        <a href="A-Star-Algorithm-Visualizer/index.html">Run Project</a>
+      </p>
+      <h2>Example Usage</h2>
+      <p align="center"><img src="assets/logo.svg" height="300px" width="300px" /></p>
+      <h2>License</h2>
+      <p>
+        <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE">MIT</a>
+      </p>
+      <div align="center">
+        <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network"
+          ><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+        /></a>
+        <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/stargazers"
+          ><img src="https://img.shields.io/github/stars/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+        /></a>
+        <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE"
+          ><img src="https://img.shields.io/github/license/iamrajiv/A-Star-Algorithm-Visualizer?color=d52737&style=for-the-badge"
+        /></a>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="https://iamrajiv.github.io/" target="_blank">Portfolio</a>
+      <a href="https://github.com/iamrajiv" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/iamrajivranjansingh/" target="_blank">LinkedIn</a>
+      <a href="https://stackoverflow.com/users/10765954/rajiv-ranjan-singh?tab=profile" target="_blank">StackOverflow</a>
+    </div>
+  </body>
 </html>
