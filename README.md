@@ -34,7 +34,7 @@ The way that the algorithm makes its decisions is by taking the f-value into acc
 
 ## Installation & Setup
 
-<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/A-Star-Algorithm-Visualizer/index.html">Run Project</a>
+<a href="A-Star-Algorithm-Visualizer/index.html">Run Project</a>
 
 ## Example Usage
 
