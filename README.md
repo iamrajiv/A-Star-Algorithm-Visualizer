@@ -32,7 +32,7 @@ So, **f = g + h**
 
 The way that the algorithm makes its decisions is by taking the f-value into account. The algorithm selects the smallest f-valued cell and moves to that cell. This process continues until the algorithm reaches its goal cell.
 
-## Installation & Setup
+## Demonstration
 
 <a href="https://iamrajiv.github.io/A-Star-Algorithm-Visualizer/A-Star-Algorithm-Visualizer/index.html">Run Project</a>
 
