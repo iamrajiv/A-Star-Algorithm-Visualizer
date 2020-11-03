@@ -5,7 +5,7 @@
 <p align="center">
 A simple pathfinding visualizer for A* algorithm
 </p>
-<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network"><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=0366d6&style=for-the-badge"/></a>
+<a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network/members"><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=0366d6&style=for-the-badge"/></a>
 <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/stargazers"><img src="https://img.shields.io/github/stars/iamrajiv/A-Star-Algorithm-Visualizer?color=0366d6&style=for-the-badge"/></a>
 <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE"><img src="https://img.shields.io/github/license/iamrajiv/A-Star-Algorithm-Visualizer?color=0366d6&style=for-the-badge"/></a>
 </div>
