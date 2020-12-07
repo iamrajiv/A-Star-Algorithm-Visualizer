@@ -30,10 +30,6 @@ The way that the algorithm makes its decisions is by taking the f-value into acc
 
 <a href="https://iamrajiv.github.io/A-Star-Algorithm-Visualizer/A-Star-Algorithm-Visualizer/index.html">Run Project</a>
 
-## Example Usage
-
-<p align="center"><img src="" height="300px" width="300px" /></p>
-
 ## License
 
 [MIT](https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/blob/master/LICENSE)
