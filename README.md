@@ -2,7 +2,7 @@
 <img src="assets/logo.svg" width="400" />
 <br />
 <h1>A* Algorithm Visualizer</h1>
-<p align="center">
+<p>
 A simple pathfinding visualizer for A* algorithm
 </p>
 <a href="https://github.com/iamrajiv/A-Star-Algorithm-Visualizer/network/members"><img src="https://img.shields.io/github/forks/iamrajiv/A-Star-Algorithm-Visualizer?color=0366d6&style=for-the-badge" /></a>
