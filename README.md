@@ -22,7 +22,7 @@ A\* algorithm has 3 parameters:
 - **h**: Also known as the heuristic value, it is the estimated cost of moving from the current cell to the final cell. The actual cost cannot be calculated until the final cell is reached. Hence, **h** is the estimated cost. We must make sure that there is never an overestimation of the cost.
 - **f**: It is the sum of **g** and **h**.
 
-So, **f = g + h**
+<p align="center">So, <b>f = g + h</b></p>
 
 The way that the algorithm makes its decisions is by taking the f-value into account. The algorithm selects the smallest f-valued cell and moves to that cell. This process continues until the algorithm reaches its goal cell.
 
