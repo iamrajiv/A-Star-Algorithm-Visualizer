@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/logo.svg" width="400" />
+<img src="assets/a-star-algorithm-visualizer.svg" width="400" />
 <br />
 <h1>A* Algorithm Visualizer</h1>
 <p>
